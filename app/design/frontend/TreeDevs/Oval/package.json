@@ -1,0 +1,21 @@
+{
+  "author": "Magento Commerce Inc.",
+  "description": "Magento node modules dependencies for local development",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp-install": "^1.1.0",
+    "path": "^0.12.7",
+    "rfs": "^8.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

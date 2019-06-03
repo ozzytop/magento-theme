@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="TreeDevs\Widgets\Block\Widget\Posts" id="treedevs_widgets_posts">
+        <label>TreeDevs Blog Posts</label>
+        <description>Posts</description>
+        <parameters>
+            <parameter name="posts" sort_order="10" visible="true" xsi:type="text">
+                <label>Custom Posts Label</label>
+            </parameter>
+        </parameters>
+    </widget>
+
+    <widget class="TreeDevs\Widgets\Block\Widget\Features" id="treedevs_widgets_features">
+        <label>TreeDevs Features Block</label>
+        <description>Insert a title and a text for displaying features</description>
+        <parameters>
+            <parameter name="features_title_1" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature title 1</label>
+            </parameter>
+            <parameter name="features_text_1" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature text 1</label>
+            </parameter>
+            <parameter name="features_title_2" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature title 2</label>
+            </parameter>
+            <parameter name="features_text_2" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature text 2</label>
+            </parameter>
+            <parameter name="features_title_3" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature title 3</label>
+            </parameter>
+            <parameter name="features_text_3" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature text 3</label>
+            </parameter>
+            <parameter name="features_title_4" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature title 4</label>
+            </parameter>
+            <parameter name="features_text_4" sort_order="10" visible="true" xsi:type="text">
+                <label>Feature text 4</label>
+            </parameter>
+        </parameters>
+
+
+    </widget>
+</widgets>

@@ -1,0 +1,27 @@
+body{
+  @include latoRegular();
+}
+
+.page-wrapper header .panel.wrapper,
+.page-wrapper header .panel.header,{
+  background-color: $yellowColor!important;
+}
+
+.page-wrapper header .header.links a{
+  color:#000;
+}
+
+button.primary, .primary a.primary{
+    font-size: 1rem!important;
+    background-color: $yellowColor!important;
+    color:#000!important;
+    border:0!important;
+    @include latoRegular();
+    &:hover{
+      background-color: #fed900!important;
+      -webkit-transition: background-color 0.3s;
+      -moz-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+    }
+}

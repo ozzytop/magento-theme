@@ -1,0 +1,45 @@
+.featured {
+  &__row{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    text-align: center;
+    @include latoRegular();
+    @include responsive-font-size(20px);
+  }
+  &__content{
+    text-align: center;
+    @include latoLight();
+    @include responsive-font-size(16px);
+    color: #777777;
+  }
+
+  &__icon{
+    margin:0 auto;
+    font-size:3rem;
+  }
+
+  &__featured-icon-1{
+    @extend %fa-icon;
+    @extend .fas;
+    &:before {
+      content: fa-content($fa-var-user);
+    }
+    background-color: red;
+  }
+
+    &__featured-icon-2{
+     @extend %fa-icon;
+      @extend .fab;
+
+    &:before {
+      content: fa-content($fa-var-twitter);
+    }
+      background-color: green;
+  }
+
+
+
+
+}

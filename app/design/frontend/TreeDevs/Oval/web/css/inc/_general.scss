@@ -1,0 +1,18 @@
+
+html{
+  font-size: 16px;
+}
+
+@mixin titleFontSize(){
+  @include responsive-font-size(64px);
+}
+@mixin subtitleFontSize(){
+  @include responsive-font-size(24px);
+}
+@mixin pharagraphFontSize(){
+  @include responsive-font-size(16px);
+}
+
+#maincontent{
+  padding:0!important;
+}
