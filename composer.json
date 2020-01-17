@@ -12,8 +12,10 @@
     },
     "require": {
         "magento/product-community-edition": "2.3.1",
+        "mageplaza/magento-2-social-login": "^2.7",
         "mageplaza/magento-2-spanish-language-pack": "dev-master",
         "mageplaza/module-banner-slider": "^2.0",
+        "mageplaza/module-smtp": "^1.2",
         "transbank/webpay-magento2": "^3.1"
     },
     "require-dev": {

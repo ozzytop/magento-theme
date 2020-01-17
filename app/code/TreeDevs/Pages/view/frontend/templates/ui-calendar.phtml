@@ -1,0 +1,23 @@
+<section>
+    <h2>Calender</h2>
+    <div class="field">
+        <label>Date : </label>
+        <input type="text" class="input-text" id="example-date" style="width: auto" name="example-date"/>
+    </div>
+</section>
+<script>
+  require([
+    'jquery',
+    'mage/translate',
+    'mage/calendar'
+    ], function ($, $t) {
+      $('#example-date').calendar({
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        currentText: $t('Go Today'),
+        closeText: $t('Close'),
+        showWeek: true
+      });
+    })
+</script>

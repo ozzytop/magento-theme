@@ -1,0 +1,27 @@
+<section class="ui-collapsible">
+    <h2>Collapsible</h2>
+    <div id="collapsible-element">
+        <div data-role="title">
+            <h4>Fruit</h4>
+        </div>
+        <div data-role="content">
+            <ul>
+                <li>Orange</li>
+                <li>Apple</li>
+                <li>Banana</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<script>
+require([
+    'jquery',
+    'Magento_Ui/js/lib/collapsible'
+], function ($, collapsible) {
+    'use strict';
+    $("#collapsible-element").collapsible({
+        active: true,
+        //animate: {duration:1000,easing:"easeOutCubic"}
+    });
+});
+</script>

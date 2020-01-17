@@ -1,0 +1,17 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+    <body>
+        <referenceContainer name="content">
+            <block name="child" class="TreeDevs\Pages\Block\Helloworld" template="testing-child.phtml" >
+                <arguments>
+                    <argument name="example_string" xsi:type="string">Custom string</argument>
+                    <argument name="example_number" xsi:type="number">100</argument>
+                    <argument name="custom_array" xsi:type="array">
+                        <item name="array_key_one" xsi:type="string">First Item</item>
+                        <item name="array_key_two" xsi:type="string">Second Item</item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

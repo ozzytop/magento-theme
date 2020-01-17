@@ -1,0 +1,36 @@
+<section class="ui-breadcrumbs">
+    <h2>BreadCrumbs</h2>
+    <div id="breadcrumbs"></div>
+</section>
+
+<script>
+    require([
+            'jquery',
+            'Magento_Theme/js/model/breadcrumb-list',
+            'breadcrumbs'
+        ], function ($,breadcrumbList) {
+            'use strict';
+        var breadcrumbs = [
+            {
+                'name': 'some-page-1',
+                'link': '/some/path/1',
+                'title': 'Link title for page 1',
+                'label': 'Some page 1'
+            },
+            {
+                'name': 'some-page-1',
+                'link': '/some/path/2',
+                'title': 'Link title for page 1',
+                'label': 'Some page 2'
+            }
+        ];
+
+        // adding breadcrumbs to the Breadcrumb List
+        breadcrumbs.forEach(function (breadcrumb) {
+            breadcrumbList.push(breadcrumb);
+        });
+
+
+            $('#breadcrumbs').breadcrumbs();
+        });
+</script>

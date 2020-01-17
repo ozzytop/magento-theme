@@ -1,0 +1,20 @@
+.page-wrapper {
+  @include make-container();
+  padding: 0;
+}
+.page-main{
+    @include make-container-max-widths();
+}
+.cms-home{
+    .page-main{
+        max-width: none!important;
+    }
+}
+
+
+
+input, textarea, a, button {
+  &:focus {
+    outline: none;
+  }
+}

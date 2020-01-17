@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="TreeDevs_Pages::helloworld" title="Hello World" module="TreeDevs_Pages" sortOrder="51" resource="Magento_Backend::admin"/>
+        <add id="TreeDevs_Pages::post" title="Manage Posts" module="TreeDevs_Pages" sortOrder="10" action="mageplaza_helloworld/post" resource="TreeDevs_Pages::post" parent="TreeDevs_Pages::helloworld"/>
+        <add id="TreeDevs_Pages::hello_configuration" title="Configuration" module="TreeDevs_Pages" sortOrder="99" parent="TreeDevs_Pages::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="TreeDevs_Pages::helloworld_configuration"/>
+
+
+    </menu>
+</config>

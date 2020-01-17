@@ -1,0 +1,18 @@
+.checkout-index-index{
+    /*
+    .columns{
+        @include make-container-max-widths();
+        margin: 0 auto;
+    }*/
+    .opc-progress-bar{
+        li{
+            span{
+                font-size: 1rem;
+            }
+        }
+    }
+    .opc-progress-bar-item > span:after{
+        font-size: 1rem;
+    }
+
+}

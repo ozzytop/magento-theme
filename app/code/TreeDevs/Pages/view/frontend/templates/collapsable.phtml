@@ -1,0 +1,19 @@
+<div  id="my-collapsable" data-mage-init='{"collapsible": { "active": true, "saveState": true, "animate": true} }'>
+    <div data-role="title">
+
+        <h2>How is this widget collapsible?<button data-role="trigger">Hey</button></h2>
+    </div>
+    <div data-role="content">
+        This is the text collapsable
+    </div>
+</div>
+<div  id="my-collapsable-2" data-mage-init='{"collapsible": { "active": true, "animate": true, "ajaxContent": true} }'>
+    <div data-role="title">
+        <h2>How is this widget collapsible?<button data-role="trigger">Hey</button></h2>
+    </div>
+    <div data-role="content">
+        This is the text collapsable
+    </div>
+    <!-- loads content through ajax -->
+    <a href="<?= $block->getViewFileUrl('TreeDevs_Pages/example-content.html') ?>" data-ajax="true"></a>
+</div>

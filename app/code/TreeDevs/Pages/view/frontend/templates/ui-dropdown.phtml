@@ -1,0 +1,28 @@
+<section class="ui-dropdown">
+    <h2>Dropdown Widget</h2>
+    <div class="magento__dropdown-widget">
+        <span class="action toggle" data-toggle="dropdown" aria-haspopup="true">
+            <span>Dropdown Opener Button</span>
+         </span>
+         <ul class="dropdown-options" data-target="dropdown">
+             <li>
+                 <span class="item">Dropdown Item One</span>
+             </li>
+             <li>
+                 <span class="item"><a href="#">Dropdown Item Two, With Link</a></span>
+             </li>
+             <li>
+                 <span class="item">Dropdown Item Three</span>
+             </li>
+         </ul>
+    </div>
+</section>
+<script>
+require([
+    'jquery',
+    'mage/dropdowns',
+], function ($) {
+    $('.magento__dropdown-widget').dropdown();
+});
+</script>
+

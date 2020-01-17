@@ -1,0 +1,26 @@
+<?php declare(strict_types=1);
+
+//** @var \Magento\Framework\View\Element\Template @block */
+
+    ?>
+<!-- Tenemos dos formas de pasar variables al js, con el json de x-magento-init o dentro del data-mage-init -->
+<script type="text/x-magento-init">
+    {
+        "#target": {
+            "coffee": {
+                "base_url": "<?= $block->escapeJs($block->getBaseUrl()); ?>"
+            }
+        }
+    }
+
+</script>
+<!-- <div id="target" data-mage-init='{"TreeDevs_Pages/js/requirejs-example": {"base_url": "/"}}'></div> -->
+<pre id="target"></pre>
+<form data-mage-init='{"validation": {}}'>
+    <div class="control">
+        <input type="text" name="email" id="email" class="input-text"
+               placeholder="<?= __('Your Email')?>"
+               data-validate="{required:true, 'validate-email': true}" />
+    </div>
+    <button type="submit" class="action primary"> <?= __('Submit') ?> </button>
+</form>

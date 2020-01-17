@@ -206,8 +206,15 @@ return [
         'Magento_WishlistGraphQl' => 1,
         'Mageplaza_Core' => 1,
         'Mageplaza_BannerSlider' => 1,
+        'Mageplaza_GoogleRecaptcha' => 1,
+        'Mageplaza_HelloWorld' => 1,
+        'Mageplaza_Reports' => 1,
+        'Mageplaza_Smtp' => 1,
+        'Mageplaza_SocialLogin' => 1,
         'Temando_Shipping' => 1,
         'Transbank_Webpay' => 1,
+        'TreeDevs_Crud' => 1,
+        'TreeDevs_Pages' => 1,
         'TreeDevs_Widgets' => 1,
         'Vertex_Tax' => 1
     ]

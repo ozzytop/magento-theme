@@ -1,0 +1,39 @@
+<section class="ui-dropdowndialog">
+    <h2>Dropdown Dialog</h2>
+
+
+    <div data-block="dropdown" class="minicart-wrapper">
+        <button type="button" class="action" data-trigger="trigger">
+            <span data-bind="i18n: 'Click Here'"></span>
+        </button>
+    </div>
+    <button id="close-dialog">
+        Close
+    </button>
+    <div class="block block-minicart"
+         data-mage-init='{
+        "dropdownDialog": {
+            "appendTo": "[data-block=dropdown]",
+            "triggerTarget":"[data-trigger=trigger]",
+            "timeout": 2000,
+            "closeOnMouseLeave": false,
+            "closeOnEscape": true,
+            "autoOpen": true,
+            "triggerClass": "active",
+            "parentClass": "active",
+            "buttons": []
+        }
+     }'>
+        <div id="minicart-content-wrapper">
+            Here is our content
+        </div>
+    </div>
+
+</section>
+<script>
+    require(['jquery'], function($){
+        $('#close-dialog').on('click', function() {
+            $(".block-minicart").dropdownDialog("close");
+        });
+    });
+</script>

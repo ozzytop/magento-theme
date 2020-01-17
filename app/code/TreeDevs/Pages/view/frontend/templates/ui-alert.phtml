@@ -1,0 +1,58 @@
+<section class="ui-alert">
+    <h2>Alert UI</h2>
+
+
+    <button id="alert-modal">
+        Click here to open the Alert
+    </button>
+
+    <div class="alert-modal-content">
+        <p>This is the modal that you are going to test.</p>
+    </div>
+
+</section>
+<script>
+require([
+    'jquery',
+    'Magento_Ui/js/modal/alert'
+], function ($) {
+    'use strict';
+
+    $('#alert-modal').on('click', function(){
+        debugger;
+        $('.modals-wrapper').css('display', 'block');
+        $('.alert-modal-content').alert({
+            title: 'Alert Title',
+            modalClass: 'alert',
+            actions: {
+                always: function() {
+                    // do something when the modal is closed
+                }
+            },
+            buttons: [{
+                text: $.mage.__('Accept'),
+                class: 'action primary accept',
+
+                /**
+                 * Click handler.
+                 */
+                click: function () {
+                    this.closeModal(true);
+                }
+            }, {
+                text: $.mage.__('New Action'),
+                class: 'action',
+
+                /**
+                 * Click handler.
+                 */
+                click: function () {
+                    // New action
+                }
+            }]
+        });
+    });
+
+
+});
+</script>

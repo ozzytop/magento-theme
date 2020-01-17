@@ -1,0 +1,20 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+    <body>
+        <referenceContainer name="content" label="nameprueba" htmlTag="section" htmlClass="esta-clase-se-puede-ver">
+            <container name="ui_test_container" htmlTag="div" htmlClass="ui-test-container">
+                <block  name="ui_accordion" template="TreeDevs_Pages::ui-accordion.phtml" />
+                <block  name="ui_alert" template="TreeDevs_Pages::ui-alert.phtml" />
+                <block  name="ui_breadcrumbs" template="TreeDevs_Pages::ui-breadcrumbs.phtml" />
+                <block  name="ui_calender" template="TreeDevs_Pages::ui-calendar.phtml" />
+                <block  name="ui_collapsible" template="TreeDevs_Pages::ui-collapsible.phtml" />
+                <block  name="ui_confirmation" template="TreeDevs_Pages::ui-confirmation.phtml" />
+                <block  name="ui_dropdown" template="TreeDevs_Pages::ui-dropdown.phtml" />
+                <block  name="ui_dropdowndialog" template="TreeDevs_Pages::ui-dropdowndialog.phtml" />
+
+
+                <block  name="ui_loader" template="TreeDevs_Pages::ui-loader.phtml" />
+            </container>
+        </referenceContainer>
+    </body>
+</page>

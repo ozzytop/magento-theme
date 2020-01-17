@@ -1,0 +1,23 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+
+<h1>child
+</h1>
+<?php
+    $item = $block->getData('example_string');
+
+    echo $item;
+?>
+<br>
+<?php
+    $item1 = $this->getExampleNumber();
+    echo $item1;
+?>
+<br>
+<?php
+    $customArray = $block->getData('custom_array');
+    var_dump($customArray);
+?>
+
+

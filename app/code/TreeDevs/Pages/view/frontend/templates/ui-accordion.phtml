@@ -1,0 +1,34 @@
+<section class="ui-accordion">
+    <h2>Accordion</h2>
+    <div id="element">
+        <div data-role="collapsible">
+            <div data-role="trigger">
+                <span>Title 1</span>
+            </div>
+        </div>
+        <div data-role="content">Content 1</div>
+
+        <div data-role="collapsible">
+            <div data-role="trigger">
+                <span>Title 2</span>
+            </div>
+        </div>
+        <div data-role="content">Content 2</div>
+
+        <div data-role="collapsible">
+            <div data-role="trigger">
+                <span>Title 3</span>
+            </div>
+        </div>
+        <div data-role="content">Content 3</div>
+    </div>
+</section>
+
+<script>
+    require([
+        'jquery',
+        'accordion'], function ($) {
+        $("#element").accordion();
+
+    });
+</script>

@@ -11365,6 +11365,36 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
 
+.page-wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0; }
+
+@media (min-width: 576px) {
+  .page-main {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .page-main {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .page-main {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .page-main {
+    max-width: 1140px; } }
+
+.cms-home .page-main {
+  max-width: none !important; }
+
+input:focus, textarea:focus, a:focus, button:focus {
+  outline: none; }
+
 .page-wrapper header .header.links a {
   position: relative;
   outline: none;
@@ -11433,6 +11463,37 @@ button.primary, .primary a.primary {
     -moz-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s; }
+
+.checkout-index-index {
+  /*
+    .columns{
+        @include make-container-max-widths();
+        margin: 0 auto;
+    }*/ }
+  .checkout-index-index .opc-progress-bar li span {
+    font-size: 1rem; }
+  .checkout-index-index .opc-progress-bar-item > span:after {
+    font-size: 1rem; }
+
+.ui-test-container {
+  max-width: 768px;
+  padding: 40px; }
+  .ui-test-container > section {
+    margin: 0 0 100px !important; }
+  .ui-test-container section {
+    margin: 100px 0; }
+    .ui-test-container section h2 {
+      text-decoration: underline;
+      margin-bottom: 30px; }
+
+.modals-wrapper {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  display: none; }
+  .modals-wrapper .modal-popup {
+    height: 500px !important; }
 
 .featured__row {
   display: flex;

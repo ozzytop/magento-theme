@@ -1,0 +1,65 @@
+<?php
+declare(strict_types=1);
+//** @var \Magento\Framework\View\Element\Template @block */
+
+/*
+ knockout view-models, to declare it, we declare a model called app.js
+    We declare a view model in any page with knockout.
+
+We have to instanciate the app.js instance -> Magento_Ui/js/core/app
+This Magento_Ui/js/core/app is assign to a list of the components.
+
+We put a name -> startSimple
+and the model -> (the componenet key)
+
+
+Debugging viewmodels
+Browser console
+from console:
+require('uiRegistry').get('startSimple');
+require('uiRegistry').get('startSimple').title;
+
+Pass Php to Knockout Component:
+I added as a new key/value in the component. Check that i receive it as a parameter, then i show it and
+is like has more properties
+
+
+Observable:
+the  famous two data binding
+We send it as a parameter in the require([ko]). Then the value is witha  function -> ko.observable
+And the new value is going to be a function, so if you sent it a name as a parameter youll have the new value
+require('uiRegistry').get('startSimple').title('new Value');
+
+Subscribing to changes knockout observables
+this is for that every component that it changes, is going to be observable
+Check how the old and new value are accesible.
+
+
+Computed Observables
+part of the rendering. Function of the view model is called. whenever of the observables changes, our fucntions observable
+will be call, (the one that makes the screen render)
+
+ */
+?>
+
+<h1>Knockout</h1>
+<script type="text/x-magento-init">
+    {
+        "*":{
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "startSimple": {
+                        "component": "TreeDevs_Pages/js/plain-view-model",
+                        "base_url": "<?= $block->escapeJs($block->getBaseUrl()) ?>"
+                    }
+                }
+            }
+        }
+    }
+</script>
+<div data-bind="scope: 'startSimple'">
+    <h2 data-bind="text: title"></h2>
+    <!-- <pre data-bind="text: JSON.stringify(config,null,2)"></pre> -->
+    <pre data-bind="text: output"></pre>
+
+</div>
